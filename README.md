@@ -91,6 +91,7 @@ Win + Shift + Q
 
 ## 🔌 Supported Providers
 
+- Your regular ChatGPT account (via OAuth)
 - Azure OpenAI  
 - OpenAI  
 - Anthropic Claude  
