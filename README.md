@@ -1,219 +1,229 @@
 # 🚀 BuddyAI Desktop
 
-> **A real-time AI co-pilot for your desktop workflows — not just your browser**
-
-BuddyAI Desktop brings AI directly into your Windows desktop experience.  
-It helps you analyze what is on screen, work across multiple AI providers, run persona-driven prompts, and stay inside your normal workflow without jumping between browser tabs, chat windows, documentation, screenshots, and notes.
-
-BuddyAI is designed to make AI usable in the place where work actually happens: **your desktop**.
+> **Stop switching between ChatGPT, Copilot, logs, screenshots, and docs.**  
+> **Bring AI directly into your desktop workflow.**
 
 ---
 
-## Why BuddyAI Desktop?
+## ⚡ What is BuddyAI?
 
-Most AI tools are still browser-first.
+BuddyAI Desktop is a **desktop-native AI workspace** that brings AI into the place where you actually work.
 
-BuddyAI Desktop is **desktop-first**.
+- No browser dependency  
+- No constant copy/paste  
+- No single-provider lock-in  
 
-That means:
-
-- AI stays closer to your active workflow
-- You can analyze selected text and screenshots directly
-- You can switch between multiple AI providers
-- You can use specialized personas and prompt templates
-- You can work across multiple AI conversations in parallel
-- You can bring AI to engineering, cloud, support, operations, security, architecture, and general business workflows
+👉 AI works directly inside your workflow.
 
 ---
 
-## Core Capabilities
+## 🔥 The Problem
 
-### 🧠 Multi-Tab AI Workspace
-BuddyAI Desktop supports multiple conversation tabs so you can work on different tasks in parallel.
+Typical workflow today:
 
-Examples:
-- one tab for cloud troubleshooting
-- one tab for architecture review
-- one tab for code generation
-- one tab for document summarization
+1. Copy text  
+2. Open ChatGPT/Copilot/Claude
+3. Paste  
+4. Ask  
+5. Copy result  
+6. Go back  
+7. Paste again. Loop. 
 
-Each tab maintains its own conversation flow and context.
-
----
-
-### 📸 Screen Snip + AI Analysis
-Capture a region of the screen and send it directly to AI for analysis.
-
-This is ideal for:
-- logs
-- diagrams
-- errors
-- tables
-- dashboards
-- screenshots from internal tools
-- documentation snippets
-
-BuddyAI is built to reduce copy/paste friction and help you move from **seeing something** to **asking AI about it** immediately.
+Repeat all day.
 
 ---
 
-### 🔍 Lens Feature
-BuddyAI Desktop includes a **Lens-style workflow** that lets you take selected text from the current application and run it through a focused persona + prompt pipeline.
+## ✅ The Fix
 
-This feature is designed for fast desktop augmentation.
+BuddyAI eliminates this loop:
 
-#### What Lens does
-- takes the currently selected text from the active application
-- presents a persona/category-driven menu
-- lets you choose a prompt template
-- optionally lets you refine the request
-- generates transformed output
-- allows replacing or copying the result back into your workflow
-
-#### Example workflow
-A user highlights a query, code block, log snippet, email text, or paragraph on screen.  
-BuddyAI opens a context window showing:
-
-- the selected source text
-- a category/persona menu
-- a prompt template menu
-- optional custom prompt additions
-- generated output preview
-- actions such as copy or replace
-
-This makes BuddyAI feel less like “open a chatbot and ask something” and more like **AI applied directly to what you are doing right now**.
-
-#### Lens use cases
-- optimize code
-- explain code
-- add comments
-- summarize text
-- rewrite content
-- transform KQL / Kusto / SQL / scripts
-- improve emails and messages
-- convert rough notes into structured output
-- analyze logs and queries
-- enrich technical snippets with additional context
-##### Supported Applications
-- All web browsers and contents within them (Textareas..)
-- Desktop applications (VS Code, WPF-Based apps, Notepad++)
-- Advanced CAD applications
+- Select text → run AI instantly  
+- Snip screen → analyze immediately  
+- Stay inside your workflow  
+- Use any model you want  
 
 ---
 
-## Supported AI Providers
+## 🔍 Lens — Core Feature
 
-BuddyAI Desktop supports multiple providers so you are not locked into one ecosystem.
+BuddyAI Lens applies AI directly to selected text from ANY application.
 
-### Current provider support
-- Azure OpenAI
-- OpenAI
-- Anthropic Claude
-- Google Gemini
-- Mistral
-- Local/OpenAI-compatible endpoints (LM Studio/Ollama)
-- Custom provider configurations
+### Shortcut:
+Win + Shift + Z
 
-This allows BuddyAI to fit:
-- enterprise environments
-- personal workflows
-- local AI experimentation
-- multi-model evaluation scenarios
+### How it works
 
----
+1. Select text (code, logs, query, email, etc.)
+2. Open Lens (Win + Shift + Z)
+3. Choose persona + prompt (keyboard driven)
+4. Generate output
+5. Copy or replace original text!
 
-## Key Features
+### Why it matters
 
-### ✅ Desktop-Native Experience
-BuddyAI is built for Windows desktop usage, not as a browser wrapper.
+Removes:
+- copy → switch → paste → ask → copy → switch back
 
-### ✅ Multi-Provider Architecture
-Use different models and vendors depending on the task.
-
-### ✅ Persona-Based Workflows
-Use predefined or custom personas for different roles, domains, and tasks.
-
-### ✅ Prompt Templates
-Run repeatable workflows with reusable prompt templates.
-
-### ✅ Lens-Driven Selection Actions
-Apply AI directly to selected text from your active application.
-
-### ✅ Screenshot Analysis
-Capture what is on your screen and ask AI about it instantly.
-
-### ✅ Multi-Conversation Tabs
-Keep multiple active workstreams open at once.
-
-### ✅ Enterprise-Friendly Direction
-Supports internal endpoints, Azure-hosted models, configurable providers, and controlled usage patterns.
+👉 Zero friction workflow
 
 ---
 
-## Example Scenarios
+## 📸 Screenshot → AI
+
+### Shortcut:
+Win + Shift + Q
+
+### How it works
+- Capture screen
+- Send to AI
+- Get insights instantly
+- Popup window on bottom right on your desktop
+
+---
+
+## 🧠 Multi-Tab Workspace
+
+- Multiple conversations
+- Context per tab
+- Parallel workflows
+
+---
+
+## 🔌 Supported Providers
+
+- Azure OpenAI  
+- OpenAI  
+- Anthropic Claude  
+- Google Gemini  
+- Mistral  
+- LM Studio / Ollama / local endpoints  
+- Custom APIs  
+
+---
+
+## 🧩 Personas + Templates
+
+Reusable workflows:
+
+- Optimize Code  
+- Explain Logs  
+- Summarize Incident  
+- Rewrite Email  
+
+---
+
+## 🤔 Why Not ChatGPT or Copilot?
+
+| Feature | BuddyAI | ChatGPT/Copilot | Claude |
+|--------|--------|--------|--------|
+| Works across apps | Yes | No | No |
+| Screenshot AI | Yes | No | No |
+| Multi-provider | Yes | No | No |
+| Desktop-native | Yes | No | No |
+| Local LLM | Yes | No | No |
+
+---
+
+## 🧠 Use Cases
 
 ### Engineering
-- optimize code
-- explain code
-- add comments
-- find bugs
-- refactor snippets
-- summarize diffs
+- optimize code  
+- explain code  
 
 ### Cloud / DevOps
-- analyze Azure queries
-- improve KQL / Kusto
-- summarize cloud findings
-- transform scripts
-- review resource inventory queries
-- interpret logs and alerts
+- analyze queries  
+- summarize logs  
 
 ### Security
-- analyze suspicious logs
-- summarize findings
-- review policy snippets
-- explain alerts
-- rewrite findings into executive summaries
+- analyze alerts  
+- generate reports  
 
-### Support / Operations
-- rewrite customer updates
-- summarize incidents
-- clean up internal notes
-- convert rough troubleshooting notes into polished updates
-
-### General Productivity
-- improve emails
-- rewrite messages
-- summarize documents
-- transform notes into action items
-- create structured content from unstructured text
+### Productivity
+- rewrite emails  
+- summarize documents  
 
 ---
 
-## What Makes BuddyAI Different?
+## 🏢 Enterprise Ready
 
-BuddyAI Desktop is not just another chat window.
-
-It is a **desktop AI workspace**.
-
-### Compared to browser-based AI tools
-BuddyAI is stronger when you want:
-- less context switching
-- faster use of selected text
-- screenshot-driven workflows
-- repeatable persona/prompt operations
-- side-by-side desktop usage
-- multiple providers in one tool
-
-### Compared to single-provider tools
-BuddyAI is stronger when you want:
-- model flexibility
-- vendor independence
-- local and cloud options
-- enterprise endpoint support
-- specialized prompt workflows
+- Azure OpenAI support  
+- Local key storage  
+- Works with private endpoints  
+- No forced data sharing  
 
 ---
 
-## Screenshots
+## 🖼️ Screenshots
+ 
+- assets/main.png  
+- assets/lens.png  
+- assets/snip.png  
+- assets/providers.png  
 
+---
+
+## ⚡ Quick Start
+
+1. Install BuddyAI  
+2. Add provider  
+3. Select text or snip  
+4. Run Lens  
+
+---
+
+## ⚙️ Installation
+
+### Download
+https://github.com/zmustafa/BuddyAI-Desktop/releases
+
+### Build
+
+```bash
+git clone https://github.com/zmustafa/BuddyAI-Desktop.git
+cd BuddyAI-Desktop
+```
+
+Open in Visual Studio and run.
+
+---
+
+## 🧭 Roadmap
+
+- Lens enhancements  
+- Plugin system  
+- Enterprise controls  
+- Session persistence  
+
+---
+
+## 🤝 Contributing
+
+PRs and issues welcome.
+
+---
+
+## 🔐 Security
+
+Review usage based on your organization’s policies.
+
+---
+
+## 📄 License
+
+MIT
+
+---
+
+## ⭐ Support
+
+- Star the repo  
+- Share with your team  
+- Provide feedback  
+
+---
+
+## 🚀 Final Thought
+
+AI should live where work happens.
+
+BuddyAI brings AI directly into your desktop.
