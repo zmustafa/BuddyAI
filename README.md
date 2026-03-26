@@ -94,6 +94,10 @@ This makes BuddyAI feel less like “open a chatbot and ask something” and mor
 - convert rough notes into structured output
 - analyze logs and queries
 - enrich technical snippets with additional context
+##### Supported Applications
+- All web browsers and contents within them (Textareas..)
+- Desktop applications (VS Code, WPF-Based apps, Notepad++)
+- Advanced CAD applications
 
 ---
 
