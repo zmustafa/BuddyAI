@@ -1,4 +1,4 @@
-using System.Diagnostics;
+ï»¿using System.Diagnostics;
 using BuddyAI.Models;
 using BuddyAI.Services;
 
@@ -28,16 +28,16 @@ public sealed class SettingsPersonaPage : UserControl
 
     private static readonly string[] HardcodedIcons =
     [
-        "??",
-        "??",
-        "???",
-        "???",
-        "??",
-        "??",
-        "??",
-        "??",
-        "??",
-        "??"
+        "\uD83E\uDDE0",
+        "\uD83D\uDCBB",
+        "\uD83D\uDEE1\uFE0F",
+        "\uD83C\uDFD7\uFE0F",
+        "\u2601\uFE0F",
+        "\u2699\uFE0F",
+        "\uD83D\uDCCA",
+        "\uD83D\uDCDA",
+        "\uD83C\uDFA8",
+        "\uD83D\uDD0D"
     ];
 
     private readonly PersonaService _personaService;
@@ -63,6 +63,7 @@ public sealed class SettingsPersonaPage : UserControl
     private readonly Label _lblStats = new();
     private readonly ToolStrip _toolStrip1 = new();
     private readonly ToolStrip _toolStrip2 = new();
+    private readonly ToolStrip _toolStrip3 = new();
     private ToolStripButton _tsbClone = null!;
     private ToolStripButton _tsbDelete = null!;
 
@@ -78,6 +79,8 @@ public sealed class SettingsPersonaPage : UserControl
     {
         _personaService = personaService;
         _providerService = providerService;
+
+        Font = new Font("Segoe UI Emoji", 9F);
 
         BuildUi();
         WireEvents();
@@ -168,7 +171,15 @@ public sealed class SettingsPersonaPage : UserControl
             CreateToolStripButton("Export", ExportPersonas)
         ]);
 
+        _toolStrip3.GripStyle = ToolStripGripStyle.Hidden;
+        _toolStrip3.Dock = DockStyle.Top;
+        _toolStrip3.Items.AddRange(
+        [
+            CreateToolStripButton("\u2b07 Download from Catalog", DownloadFromCatalog)
+        ]);
+
         left.Controls.Add(_treePersonas);
+        left.Controls.Add(_toolStrip3);
         left.Controls.Add(_toolStrip2);
         left.Controls.Add(_toolStrip1);
         left.Controls.Add(filterBar);
@@ -565,8 +576,8 @@ public sealed class SettingsPersonaPage : UserControl
             .Count();
 
         _lblStats.Text = shown == total
-            ? $"{total} personas · {favorites} ? · {categories} categories"
-            : $"{shown} of {total} shown · {favorites} ? · {categories} categories";
+            ? $"{total} personas \u00b7 {favorites} \u2605 \u00b7 {categories} categories"
+            : $"{shown} of {total} shown \u00b7 {favorites} \u2605 \u00b7 {categories} categories";
     }
 
     private void RebuildTree(string? selectId)
@@ -582,12 +593,12 @@ public sealed class SettingsPersonaPage : UserControl
 
         foreach (var group in groups)
         {
-            TreeNode categoryNode = new($"?? {group.Key} ({group.Count()})");
+            TreeNode categoryNode = new($"{group.Key} ({group.Count()})");
             categoryNode.Tag = null;
 
             foreach (PersonaRecord record in group)
             {
-                string favorite = record.Favorite ? "? " : string.Empty;
+                string favorite = record.Favorite ? "â˜… " : string.Empty;
                 string label = $"{favorite}{record.Icon} {record.PersonaName}";
                 TreeNode personaNode = new(label) { Tag = record };
                 categoryNode.Nodes.Add(personaNode);
@@ -803,7 +814,7 @@ public sealed class SettingsPersonaPage : UserControl
         if (node.Parent != null)
         {
             string parentLabel = node.Parent.Text;
-            string expectedPrefix = $"?? {currentCategory}";
+            string expectedPrefix = $"{currentCategory}";
             if (!parentLabel.StartsWith(expectedPrefix, StringComparison.OrdinalIgnoreCase))
             {
                 _isLoading = false;
@@ -948,6 +959,28 @@ public sealed class SettingsPersonaPage : UserControl
         _personaService.Export(dialog.FileName, _records);
         MessageBox.Show(FindForm(), "Personas exported successfully.", "Export Personas",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
+    }
+
+    private void DownloadFromCatalog()
+    {
+        PersonaCatalogService catalogService = new();
+        using PersonaCatalogBrowserForm browser = new(catalogService, _personaService);
+
+        browser.ShowDialog(FindForm());
+
+        if (browser.DownloadedPersonas.Count == 0)
+            return;
+
+        ApplyEditorChanges();
+        _personaService.BackupPersonasFile();
+
+        List<PersonaRecord> merged = PersonaCatalogService.MergeWithExisting(
+            _records, browser.DownloadedPersonas);
+
+        _records.Clear();
+        _records.AddRange(merged);
+        ApplyFilter(_records.FirstOrDefault()?.Id);
+        MarkDirty();
     }
 
     private void SaveAll()

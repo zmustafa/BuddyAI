@@ -183,7 +183,7 @@ public sealed partial class AIQ : Form
     {
         _promptAssistanceHelper = new PromptAssistanceHelper(_managedSuggestions, _templates);
         _workspaceSettings = _workspaceSettingsService.Load();
-
+        
         _activeTheme = ThemeService.Resolve(_workspaceSettings.Theme);
         _iconCache = new TablerIconCache(_activeTheme.Text);
 
@@ -227,7 +227,7 @@ public sealed partial class AIQ : Form
         string currentProvider = string.IsNullOrWhiteSpace(preferredProviderName)
             ? (_cmbProvider.SelectedItem as AiProviderDefinition)?.Id ?? GetComboSelectionText(_cmbProvider)
             : preferredProviderName.Trim();
-
+            
         string currentModel = string.IsNullOrWhiteSpace(preferredModel)
             ? GetComboSelectionText(_cmbModel)
             : preferredModel.Trim();
@@ -319,10 +319,10 @@ public sealed partial class AIQ : Form
             return false;
 
         AiProviderDefinition? provider = null;
-
+        
         if (!string.IsNullOrWhiteSpace(preferredProviderName))
             provider = _providers.FirstOrDefault(x => string.Equals(x.Id, preferredProviderName, StringComparison.OrdinalIgnoreCase));
-
+            
         if (provider == null)
             provider = FindProviderByName(preferredProviderName) ?? FindProviderByModel(model) ?? _providers.FirstOrDefault();
 
@@ -550,7 +550,7 @@ public sealed partial class AIQ : Form
             await Task.Delay(150);
             for (int remaining = delaySeconds; remaining >= 1; remaining--)
             {
-                SetStatus("Snipping starts in " + remaining + " second" + (remaining == 1 ? string.Empty : "s") + "...");
+                SetStatus("Snipping starts in " + remaining + " second" + ( remaining == 1 ? string.Empty : "s") + "...");
                 await Task.Delay(1000);
             }
 
@@ -614,7 +614,7 @@ public sealed partial class AIQ : Form
         _diagnostics.Info("Image loaded from file.");
     }
 
-    private void ApplyImageFromBitmap(Bitmap bitmap, string? sourcePath, string mimeType)
+   private void ApplyImageFromBitmap(Bitmap bitmap, string? sourcePath, string mimeType)
     {
         using MemoryStream ms = new();
         bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
@@ -895,7 +895,7 @@ public sealed partial class AIQ : Form
 
         page.Controls.Add(right);
         _conversationTabs.TabPages.Add(page);
-
+        
         SplitContainer split = new();
         PictureBox picture = new();
         Label imageInfo = new();
@@ -1396,7 +1396,7 @@ public sealed partial class AIQ : Form
 
         if (!string.IsNullOrWhiteSpace(state.Persona))
             SelectPersona(state.Persona);
-
+            
         if (!string.IsNullOrWhiteSpace(state.ProviderId) || !string.IsNullOrWhiteSpace(state.Provider) || !string.IsNullOrWhiteSpace(state.Model))
         {
             string providerToSelect = !string.IsNullOrWhiteSpace(state.ProviderId) ? state.ProviderId : state.Provider;
@@ -2861,11 +2861,6 @@ public sealed partial class AIQ : Form
         RefreshUsageStatus();
         SetStatus("Usage statistics purged.");
         _diagnostics.Info("Usage statistics purged by user.");
-    }
-
-    private void InitializeComponent()
-    {
-
     }
 
     private void ExportDiagnostics()

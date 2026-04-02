@@ -135,7 +135,7 @@ internal sealed class SearchResultItem
         Query = query;
     }
 
-    public override string ToString() => State.Title + " — " + State.Persona;
+    public override string ToString() => State.Title + " \u2014 " + State.Persona;
 }
 
 /// <summary>

@@ -20,6 +20,16 @@ public sealed class PersonaService
 
     public string GetStoragePath() => _jsonPath;
 
+    public void BackupPersonasFile()
+    {
+        if (!File.Exists(_jsonPath))
+            return;
+
+        string timestamp = DateTime.Now.ToString("yyyyMMdd-HHmmss");
+        string backupPath = Path.Combine(_folderPath, $"personas-{timestamp}.json");
+        File.Copy(_jsonPath, backupPath, overwrite: true);
+    }
+
     public void EnsureFileExists()
     {
         Directory.CreateDirectory(_folderPath);

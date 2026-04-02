@@ -145,7 +145,7 @@ internal sealed class ConversationManager
     {
         string value = string.IsNullOrWhiteSpace(title) ? "Conversation" : title.Trim();
         value = Regex.Replace(value, "\\s+", " ");
-        return value.Length > 28 ? value.Substring(0, 28) + "…" : value;
+        return value.Length > 28 ? value.Substring(0, 28) + "\u2026" : value;
     }
 
     public void UpdateConversationImage(ConversationTabState state, byte[]? imageBytes, string? imageMimeType, string? imagePath)
@@ -362,7 +362,7 @@ internal sealed class ConversationManager
         Rectangle closeRect = GetConversationTabCloseRect(e.Index);
         using SolidBrush closeBrush = new(isSelected ? Color.FromArgb(220, 20, 60) : Color.FromArgb(160, 160, 160));
         e.Graphics.FillEllipse(closeBrush, closeRect);
-        TextRenderer.DrawText(e.Graphics, "×", _conversationTabs.Font, closeRect, Color.White, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+        TextRenderer.DrawText(e.Graphics, "\u00d7", _conversationTabs.Font, closeRect, Color.White, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
     }
 
     public Rectangle GetConversationTabCloseRect(int tabIndex)

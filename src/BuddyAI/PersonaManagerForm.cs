@@ -1,4 +1,5 @@
 using System.Windows.Forms;
+using BuddyAI.Forms;
 using BuddyAI.Models;
 using BuddyAI.Services;
 
@@ -64,6 +65,7 @@ public sealed class PersonaManagerForm : Form
     private readonly Label _lblStats = new();
     private readonly ToolStrip _toolStrip1 = new();
     private readonly ToolStrip _toolStrip2 = new();
+    private readonly ToolStrip _toolStrip3 = new();
     private ToolStripButton _tsbClone = null!;
     private ToolStripButton _tsbDelete = null!;
 
@@ -83,6 +85,7 @@ public sealed class PersonaManagerForm : Form
         Size = new Size(1100, 680);
         AutoScaleMode = AutoScaleMode.Dpi;
         KeyPreview = true;
+        Font = new Font("Segoe UI Emoji", 9F);
 
         Resize += Form1_Resize;
 
@@ -177,9 +180,17 @@ public sealed class PersonaManagerForm : Form
             CreateToolStripButton("Export", ExportPersonas)
         ]);
 
+        _toolStrip3.GripStyle = ToolStripGripStyle.Hidden;
+        _toolStrip3.Dock = DockStyle.Top;
+        _toolStrip3.Items.AddRange(
+        [
+            CreateToolStripButton("⬇ Download from Catalog", DownloadFromCatalog)
+        ]);
+
         // WinForms dock z-order: last added gets highest layout priority.
         // Add Fill first, then Top items — so Top claims space before Fill.
         left.Controls.Add(_treePersonas);
+        left.Controls.Add(_toolStrip3);
         left.Controls.Add(_toolStrip2);
         left.Controls.Add(_toolStrip1);
         left.Controls.Add(filterBar);
@@ -661,7 +672,7 @@ public sealed class PersonaManagerForm : Form
 
         foreach (var group in groups)
         {
-            TreeNode categoryNode = new($"📁 {group.Key} ({group.Count()})");
+            TreeNode categoryNode = new($"{group.Key} ({group.Count()})");
             categoryNode.Tag = null;
 
             foreach (PersonaRecord record in group)
@@ -887,7 +898,7 @@ public sealed class PersonaManagerForm : Form
         if (node.Parent != null)
         {
             string parentLabel = node.Parent.Text;
-            string expectedPrefix = $"📁 {currentCategory}";
+            string expectedPrefix = $"{currentCategory}";
             if (!parentLabel.StartsWith(expectedPrefix, StringComparison.OrdinalIgnoreCase))
             {
                 // Category changed — full rebuild needed
@@ -1027,6 +1038,28 @@ public sealed class PersonaManagerForm : Form
 
         _personaService.Export(dialog.FileName, _records);
         MessageBox.Show(this, "Personas exported successfully.", "Export Personas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+    }
+
+    private void DownloadFromCatalog()
+    {
+        PersonaCatalogService catalogService = new();
+        using PersonaCatalogBrowserForm browser = new(catalogService, _personaService);
+
+        browser.ShowDialog(this);
+
+        if (browser.DownloadedPersonas.Count == 0)
+            return;
+
+        ApplyEditorChanges();
+        _personaService.BackupPersonasFile();
+
+        List<PersonaRecord> merged = PersonaCatalogService.MergeWithExisting(
+            _records, browser.DownloadedPersonas);
+
+        _records.Clear();
+        _records.AddRange(merged);
+        ApplyFilter(_records.FirstOrDefault()?.Id);
+        MarkDirty();
     }
 
     private void SaveAll()
