@@ -1,20 +1,1909 @@
 {
   "storeVersion": "1.0.0",
   "generatedUtc": "2026-04-01T20:30:00Z",
+  "personaCount": 87,
+  "categories": [
+    "Architecture",
+    "Coder",
+    "DevOps",
+    "Education",
+    "Engineering",
+    "General",
+    "Security",
+    "Support"
+  ],
   "personas": [
+    {
+      "id": "fbeb4989ca1e4e7b872527cf5e6a5545",
+      "slug": "cloud-solutions-architect-azure-error",
+      "name": "Cloud Solutions Architect",
+      "category": "Architecture",
+      "summary": "Explain Azure errors from screenshots with practical guidance.",
+      "tags": [
+        "architecture",
+        "azure",
+        "error-analysis"
+      ],
+      "roles": [
+        "Cloud Solutions Architect",
+        "Azure Engineer",
+        "Support Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/cloud-solutions-architect-azure-error.json",
+      "checksumSha256": "a46f01bc4f47a3acf56c2b56d69e356e36eadaa9d8fad3ec499ad381bea92c0d"
+    },
+    {
+      "id": "948be40cc3da44ef8270625b62afbfdd",
+      "slug": "cloud-solutions-architect-likely-cause",
+      "name": "Cloud Solutions Architect",
+      "category": "Architecture",
+      "summary": "Explain the likely cause of a cloud error clearly and quickly.",
+      "tags": [
+        "architecture",
+        "root-cause",
+        "cloud-errors"
+      ],
+      "roles": [
+        "Cloud Solutions Architect",
+        "Support Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/cloud-solutions-architect-likely-cause.json",
+      "checksumSha256": "cd035c714a9e1abc4e1568cd6a6cc8d46ecfff8c0873d981e23abf36ce6de040"
+    },
+    {
+      "id": "a783d9dedc1f45cfa0aeab0a8b7ae73d",
+      "slug": "cloud-solutions-architect-next-action-mermaid",
+      "name": "Cloud Solutions Architect",
+      "category": "Architecture",
+      "summary": "Recommend next actions and include mermaid diagrams plus customer-ready output.",
+      "tags": [
+        "architecture",
+        "mermaid",
+        "customer-ready"
+      ],
+      "roles": [
+        "Cloud Solutions Architect",
+        "CSA",
+        "Support Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "#FF8040",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/cloud-solutions-architect-next-action-mermaid.json",
+      "checksumSha256": "b1ebc7127a4a5c43a419b6e3d2cf623f04a5837ea941fc997e6fedef02c43861"
+    },
+    {
+      "id": "cf52f1cd2cc64e30bab7253f6f4496a1",
+      "slug": "cloud-solutions-architect-summary",
+      "name": "Cloud Solutions Architect",
+      "category": "Architecture",
+      "summary": "Summarize what you see from cloud designs or screenshots.",
+      "tags": [
+        "architecture",
+        "cloud",
+        "summary"
+      ],
+      "roles": [
+        "Cloud Solutions Architect",
+        "CSA",
+        "Support Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/cloud-solutions-architect-summary.json",
+      "checksumSha256": "ab3eafdd8656086371945be153bc7946e04856dd436469b46e70e59ae19a0666"
+    },
+    {
+      "id": "987191aa3aac40c5b431e5bc9b392b20",
+      "slug": "cost-aware-architect",
+      "name": "Cost-Aware Architect",
+      "category": "Architecture",
+      "summary": "Recommend cost-aware architecture improvements.",
+      "tags": [
+        "architecture",
+        "cost-optimization",
+        "cloud"
+      ],
+      "roles": [
+        "Cloud Architect",
+        "FinOps Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/cost-aware-architect.json",
+      "checksumSha256": "612fd0a97886b396572e88b5692835342cddc59958661b01dd6caafd9b06798d"
+    },
+    {
+      "id": "e2ea1885b044404798d507993e5f074b",
+      "slug": "enterprise-architect",
+      "name": "Enterprise Architect",
+      "category": "Architecture",
+      "summary": "Recommend enterprise architecture patterns and governance.",
+      "tags": [
+        "architecture",
+        "enterprise",
+        "governance"
+      ],
+      "roles": [
+        "Enterprise Architect",
+        "Solution Architect"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/enterprise-architect.json",
+      "checksumSha256": "9f0a0ed2d9bb7d92f62221a699774adeb4e0b329731b85fae37b0eb1b82d68d6"
+    },
+    {
+      "id": "df2df0563f074de28f762c5e657a2352",
+      "slug": "integration-architect",
+      "name": "Integration Architect",
+      "category": "Architecture",
+      "summary": "Recommend APIs, events, and messaging integration patterns.",
+      "tags": [
+        "architecture",
+        "integration",
+        "apis"
+      ],
+      "roles": [
+        "Integration Architect",
+        "Solution Architect"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/integration-architect.json",
+      "checksumSha256": "84c4f92d09d65a90733a6c040560dda83cb0df0dc18b5611b5eb218d1da303b6"
+    },
+    {
+      "id": "aa2d9318e0ba483b877413b6e1e205ce",
+      "slug": "migration-architect",
+      "name": "Migration Architect",
+      "category": "Architecture",
+      "summary": "Plan phased migrations with risks and rollback.",
+      "tags": [
+        "architecture",
+        "migration",
+        "cloud"
+      ],
+      "roles": [
+        "Cloud Architect",
+        "Migration Lead"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/migration-architect.json",
+      "checksumSha256": "210ce4412556524dea2e369a8234b5333c86cb33d67f59a0a79cddb9588aa792"
+    },
+    {
+      "id": "4de432384e494d9683c6ce78bc824753",
+      "slug": "reference-diagram-builder",
+      "name": "Reference Diagram Builder",
+      "category": "Architecture",
+      "summary": "Create clean textual and mermaid architecture diagrams.",
+      "tags": [
+        "architecture",
+        "mermaid",
+        "diagram"
+      ],
+      "roles": [
+        "Architect",
+        "Technical Writer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/reference-diagram-builder.json",
+      "checksumSha256": "9bb8b8d3e6ab273ffb4d3bb21b883c3f447dacc977a7c92d8d399f14919b1f53"
+    },
+    {
+      "id": "c8cbfcb7c45e4982bd4843d5b688cc66",
+      "slug": "solution-reviewer",
+      "name": "Solution Reviewer",
+      "category": "Architecture",
+      "summary": "Review solution quality, tradeoffs, and implementation risk.",
+      "tags": [
+        "architecture",
+        "solution-design",
+        "review"
+      ],
+      "roles": [
+        "Solution Architect",
+        "Lead Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/solution-reviewer.json",
+      "checksumSha256": "275d672ac3b7d7716ae7483962b39a7753d7dea06e1d841500980c43fa5dd819"
+    },
+    {
+      "id": "1f7bad707a30475dae7252366ded7154",
+      "slug": "tradeoff-analyst",
+      "name": "Tradeoff Analyst",
+      "category": "Architecture",
+      "summary": "Compare architecture options across key tradeoffs.",
+      "tags": [
+        "architecture",
+        "tradeoffs",
+        "decision-record"
+      ],
+      "roles": [
+        "Architect",
+        "Engineering Lead"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/architecture/tradeoff-analyst.json",
+      "checksumSha256": "f75ffc26d90104fbbb15b1e876b0446932e909d43912bf1cc5488625679e840b"
+    },
+    {
+      "id": "f1c2f5b865674789968a1f6b8def7042",
+      "slug": "api-designer",
+      "name": "API Designer",
+      "category": "Coder",
+      "summary": "Design practical APIs with clear contracts.",
+      "tags": [
+        "coder",
+        "api-design",
+        "backend"
+      ],
+      "roles": [
+        "Backend Engineer",
+        "Architect"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/api-designer.json",
+      "checksumSha256": "b56b1b8c00ad6da502d54b233e7037c9ebc85bdda34ceef29d05626900ce4a01"
+    },
+    {
+      "id": "eb0f591daf23473c9836a7338423472d",
+      "slug": "code-reviewer",
+      "name": "Code Reviewer",
+      "category": "Coder",
+      "summary": "Review code for defects and maintainability improvements.",
+      "tags": [
+        "coder",
+        "code-review",
+        "quality"
+      ],
+      "roles": [
+        "Software Engineer",
+        "Reviewer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/code-reviewer.json",
+      "checksumSha256": "27d7f999d827162613ea4aca121cfd4305a0ae96b959e63823198560d0b5269b"
+    },
+    {
+      "id": "13b090e06a2c4dacb3896df5f165e7bf",
+      "slug": "coder-add-comment",
+      "name": "Coder: Add Comment",
+      "category": "Coder",
+      "summary": "Add clear inline comments to existing code.",
+      "tags": [
+        "coder",
+        "coder add comment"
+      ],
+      "roles": [
+        "Coder: Add Comment"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/coder-add-comment.json",
+      "checksumSha256": "68aacd4348ec6503823f74c63cb6a238586555c117d24de25ae0123435a57bde"
+    },
+    {
+      "id": "4e72c0ad7cae4f488d82e1fbe7ede919",
+      "slug": "coder-complete-code",
+      "name": "Coder: Complete Code",
+      "category": "Coder",
+      "summary": "Complete code and return concise implementation output.",
+      "tags": [
+        "coder",
+        "coder complete code"
+      ],
+      "roles": [
+        "Coder: Complete Code"
+      ],
+      "icon": "🧠",
+      "accentHex": "#008080",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/coder-complete-code.json",
+      "checksumSha256": "e14ec2a8eef5cd6dbdfa37686cdcdc6a4809fd7090c88420aa1c8716a6a26b8c"
+    },
+    {
+      "id": "38571febf53449c099da4f8159d771e5",
+      "slug": "coder-explain-code",
+      "name": "Coder: Explain Code",
+      "category": "Coder",
+      "summary": "Explain code clearly like a senior engineer.",
+      "tags": [
+        "coder",
+        "coder explain code"
+      ],
+      "roles": [
+        "Coder: Explain Code"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/coder-explain-code.json",
+      "checksumSha256": "f913dca246df942f3c99d6f82da48cf8db890e3074f8afb451f91ede2962c549"
+    },
+    {
+      "id": "ecdcb9a3d4df47da9c0237d1e372e6ac",
+      "slug": "coder-find-bug",
+      "name": "Coder: Find Bug",
+      "category": "Coder",
+      "summary": "Find bugs in code and point out likely defects.",
+      "tags": [
+        "coder",
+        "coder find bug"
+      ],
+      "roles": [
+        "Coder: Find Bug"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/coder-find-bug.json",
+      "checksumSha256": "26e45cbd5500a64d45a981547a14316367519b4514ffe140a80f07a09df97593"
+    },
+    {
+      "id": "5a04607d2d634421a0e2583f51f5d71f",
+      "slug": "coder-generate-unit-test",
+      "name": "Coder: Generate Unit Test",
+      "category": "Coder",
+      "summary": "Generate unit tests for existing code.",
+      "tags": [
+        "coder",
+        "coder generate unit test"
+      ],
+      "roles": [
+        "Coder: Generate Unit Test"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/coder-generate-unit-test.json",
+      "checksumSha256": "24726a140e7720b021631ad2ebf16d556e244c9801d9b018a8409d65ec6bd9df"
+    },
+    {
+      "id": "f3c221a252b2473fb4279dee7f0e252e",
+      "slug": "coder-optimize-code",
+      "name": "Coder: Optimize Code",
+      "category": "Coder",
+      "summary": "Optimize code for readability, performance, and maintainability.",
+      "tags": [
+        "coder",
+        "coder optimize code"
+      ],
+      "roles": [
+        "Coder: Optimize Code"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/coder-optimize-code.json",
+      "checksumSha256": "cbf409cb8c4925f39d11ac2c0953c4e664a308f1138eea070ecdabbc54ff363f"
+    },
+    {
+      "id": "162d427828494372a9c98ecc424b20a9",
+      "slug": "csharp-engineer",
+      "name": "CSharp Engineer",
+      "category": "Coder",
+      "summary": "Write practical production-quality C# solutions.",
+      "tags": [
+        "coder",
+        "csharp",
+        ".net"
+      ],
+      "roles": [
+        "Software Engineer",
+        ".NET Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/csharp-engineer.json",
+      "checksumSha256": "7cd0a0581909f9c06664898c1a351e55499af48041dc402324dbff48293a8fb6"
+    },
+    {
+      "id": "caa493a3d6fe439197a400ccbab8302f",
+      "slug": "json-cleaner",
+      "name": "JSON Cleaner",
+      "category": "Coder",
+      "summary": "Fix malformed JSON into valid structured output.",
+      "tags": [
+        "coder",
+        "json",
+        "cleanup"
+      ],
+      "roles": [
+        "Developer",
+        "Data Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/json-cleaner.json",
+      "checksumSha256": "e37c38dc8b0b1f176227e0896b863896a581c5e7c22cc6ee56e3debdb42cfe8b"
+    },
+    {
+      "id": "2b6eb8777a924ab8a8d1ab64cbf092bb",
+      "slug": "powershell-scripter",
+      "name": "PowerShell Scripter",
+      "category": "Coder",
+      "summary": "Produce production-ready PowerShell scripts.",
+      "tags": [
+        "coder",
+        "powershell",
+        "automation"
+      ],
+      "roles": [
+        "Automation Engineer",
+        "Cloud Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/powershell-scripter.json",
+      "checksumSha256": "5cdf462ead124468205860364290dce204c4cb3f0788c848f010d267863fb38a"
+    },
+    {
+      "id": "99c5dcec0b014085b5319fb343be3eb0",
+      "slug": "refactoring-coach",
+      "name": "Refactoring Coach",
+      "category": "Coder",
+      "summary": "Refactor code for clarity and maintainability.",
+      "tags": [
+        "coder",
+        "refactoring",
+        "clean-code"
+      ],
+      "roles": [
+        "Software Engineer",
+        "Tech Lead"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/refactoring-coach.json",
+      "checksumSha256": "b8c5d4ab9a95b8a46e31bc008476a059e32c856865623a105fb73fe9906480f5"
+    },
+    {
+      "id": "ce86163903fa46d7bda55e69b70cc69f",
+      "slug": "regex-builder",
+      "name": "Regex Builder",
+      "category": "Coder",
+      "summary": "Create precise regex patterns with explanations.",
+      "tags": [
+        "coder",
+        "regex",
+        "text-processing"
+      ],
+      "roles": [
+        "Developer",
+        "Support Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/regex-builder.json",
+      "checksumSha256": "1a3eaa35c38a95f4dcc9146874fc22c4e5ade61aeff2f7cbf6e27748841a7f4b"
+    },
+    {
+      "id": "06e1115baca84b258249fbc3cb4e4a8a",
+      "slug": "sql-query-writer",
+      "name": "SQL Query Writer",
+      "category": "Coder",
+      "summary": "Write accurate and efficient SQL queries.",
+      "tags": [
+        "coder",
+        "sql",
+        "database"
+      ],
+      "roles": [
+        "Data Engineer",
+        "Software Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/coder/sql-query-writer.json",
+      "checksumSha256": "d226ed4b1bb4c3489213968ceaaa00ea34917f4d98791a7f8d7efa876c4cb332"
+    },
+    {
+      "id": "484f757daa2149e69945a75e438158b1",
+      "slug": "automation-engineer",
+      "name": "Automation Engineer",
+      "category": "DevOps",
+      "summary": "Generate robust automation scripts and workflows.",
+      "tags": [
+        "devops",
+        "automation",
+        "scripting"
+      ],
+      "roles": [
+        "Automation Engineer",
+        "DevOps Engineer",
+        "Cloud Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/automation-engineer.json",
+      "checksumSha256": "99930639674b10b9b6eb6c0edd16cae46f639e297a6c9867ec737036452e0f15"
+    },
+    {
+      "id": "c5863004214e4013897aa7374db47e0e",
+      "slug": "bicep-engineer",
+      "name": "Bicep Engineer",
+      "category": "DevOps",
+      "summary": "Generate modular Azure Bicep templates.",
+      "tags": [
+        "devops",
+        "bicep",
+        "azure"
+      ],
+      "roles": [
+        "Azure Engineer",
+        "Platform Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/bicep-engineer.json",
+      "checksumSha256": "eed984b38c2886200fb4fb18f72c4f0a2b82c32d2456da1d4f631597aecfb397"
+    },
+    {
+      "id": "a6ddf498e6144858b69a4dd9bdb98e7d",
+      "slug": "ci-cd-pipeline-engineer",
+      "name": "CI/CD Pipeline Engineer",
+      "category": "DevOps",
+      "summary": "Design reliable build and deployment pipelines.",
+      "tags": [
+        "devops",
+        "cicd",
+        "pipelines"
+      ],
+      "roles": [
+        "DevOps Engineer",
+        "Release Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/ci-cd-pipeline-engineer.json",
+      "checksumSha256": "272f5e5e78239525dacca71b1ba94530367bc32f11739082eacc83655cdc7667"
+    },
+    {
+      "id": "58d9e4fcefe94dff98ad5554aa1a2def",
+      "slug": "kubernetes-engineer",
+      "name": "Kubernetes Engineer",
+      "category": "DevOps",
+      "summary": "Review Kubernetes configurations and recommend improvements.",
+      "tags": [
+        "devops",
+        "kubernetes",
+        "containers"
+      ],
+      "roles": [
+        "Platform Engineer",
+        "SRE"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/kubernetes-engineer.json",
+      "checksumSha256": "21357cac70d164af67517322c77331e92ec77edd1d3d365dcd4608f5e9a1463a"
+    },
+    {
+      "id": "4721e2bcfbdf4c2a9c48da6916ad5736",
+      "slug": "observability-engineer",
+      "name": "Observability Engineer",
+      "category": "DevOps",
+      "summary": "Design better logs, metrics, traces, and dashboards.",
+      "tags": [
+        "devops",
+        "observability",
+        "monitoring"
+      ],
+      "roles": [
+        "SRE",
+        "Platform Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/observability-engineer.json",
+      "checksumSha256": "9a938041d6a8a56196f242156f741f8abb08d125c2d4dd769614598cd173e057"
+    },
+    {
+      "id": "df3dae4ee94843ffbfe519580d3cfda0",
+      "slug": "power-platform-automation-engineer",
+      "name": "Power Platform Automation Engineer",
+      "category": "DevOps",
+      "summary": "Design practical Power Automate solutions.",
+      "tags": [
+        "devops",
+        "power-automate",
+        "automation"
+      ],
+      "roles": [
+        "Automation Engineer",
+        "Business Analyst"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/power-platform-automation-engineer.json",
+      "checksumSha256": "bb24c34ae75b7744cd4976b4ff90286b332a3a9ae4d14b47f2bfc1b39cf61158"
+    },
+    {
+      "id": "17ccda15549144a39d391ef0bb63e29d",
+      "slug": "powershell-automation-engineer",
+      "name": "PowerShell Automation Engineer",
+      "category": "DevOps",
+      "summary": "Produce production-ready PowerShell automation with strong structure.",
+      "tags": [
+        "devops",
+        "powershell",
+        "automation"
+      ],
+      "roles": [
+        "PowerShell Engineer",
+        "DevOps Engineer",
+        "Cloud Automation Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/powershell-automation-engineer.json",
+      "checksumSha256": "edebdf6ce68d2985e994513a32b7ca0db0ce51868736bd0fde23535bb49dfe6f"
+    },
+    {
+      "id": "e2e3e33fa5ec44b3b3f1eb7c673440be",
+      "slug": "release-notes-writer",
+      "name": "Release Notes Writer",
+      "category": "DevOps",
+      "summary": "Write clear release notes from technical changes.",
+      "tags": [
+        "devops",
+        "release-notes",
+        "communication"
+      ],
+      "roles": [
+        "Release Engineer",
+        "PM"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/release-notes-writer.json",
+      "checksumSha256": "2a21f6fe9076c4cfcac921a3b56bec39db85f36e87753fd81a395456cab4a308"
+    },
+    {
+      "id": "7f9f8614fbfa4fcb9e826a22144bda9f",
+      "slug": "sre-advisor",
+      "name": "SRE Advisor",
+      "category": "DevOps",
+      "summary": "Recommend reliability improvements using SRE practices.",
+      "tags": [
+        "devops",
+        "sre",
+        "reliability"
+      ],
+      "roles": [
+        "SRE",
+        "Engineering Manager"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/sre-advisor.json",
+      "checksumSha256": "03e7e953aacd024f170c574624107b30a8a25172ddb5ca78d0033c5eb0ae76aa"
+    },
+    {
+      "id": "8674aa6a47ee42c9937921e91b6617c2",
+      "slug": "terraform-engineer",
+      "name": "Terraform Engineer",
+      "category": "DevOps",
+      "summary": "Generate clean Terraform with practical guardrails.",
+      "tags": [
+        "devops",
+        "terraform",
+        "infrastructure-as-code"
+      ],
+      "roles": [
+        "DevOps Engineer",
+        "Platform Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/devops/terraform-engineer.json",
+      "checksumSha256": "7dff2557f0f486019b23ce9babfebfa7d22d5b1d8f7e61dea924d46f3468ac6a"
+    },
+    {
+      "id": "5605fe7a222040eb85e046fdba11f413",
+      "slug": "data-formatter-base64",
+      "name": "Data Formatter",
+      "category": "Education",
+      "summary": "Convert data to and from Base64.",
+      "tags": [
+        "education",
+        "data formatter base64"
+      ],
+      "roles": [
+        "Data Formatter"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/data-formatter-base64.json",
+      "checksumSha256": "3fb9a3d2610c963bbe75c3f5bee9deb17646ab43daa9aff778b57930b4d3cbb6"
+    },
+    {
+      "id": "c27a5f17148c4682a84928bf3d93fd35",
+      "slug": "data-formatter-clean-json",
+      "name": "Data Formatter",
+      "category": "Education",
+      "summary": "Clean malformed JSON into a usable format.",
+      "tags": [
+        "education",
+        "data formatter clean json"
+      ],
+      "roles": [
+        "Data Formatter"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/data-formatter-clean-json.json",
+      "checksumSha256": "71fa4a97bd7b3aa2d47cc23b808a17243a4065b365a0aeb5a758ded4044da935"
+    },
+    {
+      "id": "abac3de9ea454bbaae94fdb3061c8b36",
+      "slug": "data-formatter-convert-to-csv",
+      "name": "Data Formatter",
+      "category": "Education",
+      "summary": "Convert incoming data into CSV format.",
+      "tags": [
+        "education",
+        "data formatter convert to csv"
+      ],
+      "roles": [
+        "Data Formatter"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/data-formatter-convert-to-csv.json",
+      "checksumSha256": "2a7a0e930b61e98ee8f9bc4af81c2b5a5085a178bdde003d4f72ed13fa14bdbe"
+    },
+    {
+      "id": "ee8009f432614ecd855fb45d611b3e42",
+      "slug": "data-formatter-csv-one-line-per-value",
+      "name": "Data Formatter",
+      "category": "Education",
+      "summary": "Convert CSV into one line per value.",
+      "tags": [
+        "education",
+        "data formatter csv one line per value"
+      ],
+      "roles": [
+        "Data Formatter"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/data-formatter-csv-one-line-per-value.json",
+      "checksumSha256": "c7af45f4ff77e79796b1d6935d3b1aef531358f668be3d1b100892306a940dc8"
+    },
+    {
+      "id": "8cc485fbe69d41f7aaf86b422b6d7b80",
+      "slug": "data-formatter-structured-json",
+      "name": "Data Formatter",
+      "category": "Education",
+      "summary": "Convert loose data into structured JSON.",
+      "tags": [
+        "education",
+        "data formatter structured json"
+      ],
+      "roles": [
+        "Data Formatter"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/data-formatter-structured-json.json",
+      "checksumSha256": "90df6c7708ee76816272b72984255482546eeb9e28f7fa20a6da7d22284da0b7"
+    },
+    {
+      "id": "43d740bf43f6425f941b53f6aa3e5341",
+      "slug": "flashcard-builder",
+      "name": "Flashcard Builder",
+      "category": "Education",
+      "summary": "Turn content into concise study flashcards.",
+      "tags": [
+        "education",
+        "study",
+        "flashcards"
+      ],
+      "roles": [
+        "Student",
+        "Teacher"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/flashcard-builder.json",
+      "checksumSha256": "b967f0753f430b26470051e11405f028ffed91660f08c9eaf047bcc80a9ad760"
+    },
+    {
+      "id": "24fb9dcaa2244bc1ba2d02a7380892a8",
+      "slug": "math-teacher-add-numbers",
+      "name": "Math Teacher",
+      "category": "Education",
+      "summary": "Perform arithmetic accurately.",
+      "tags": [
+        "education",
+        "math teacher add numbers"
+      ],
+      "roles": [
+        "Math Teacher"
+      ],
+      "icon": "🧠",
+      "accentHex": "#008000",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/math-teacher-add-numbers.json",
+      "checksumSha256": "764ca37c11567ae4f0ba9fe1c9a95b238006d43a349f754a6317b9cb46e49671"
+    },
+    {
+      "id": "b5b9b9669166464a9afd2fffe0df56a4",
+      "slug": "math-teacher-answer-check",
+      "name": "Math Teacher",
+      "category": "Education",
+      "summary": "Check answers and identify the correct choice.",
+      "tags": [
+        "education",
+        "math teacher answer check"
+      ],
+      "roles": [
+        "Math Teacher"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/math-teacher-answer-check.json",
+      "checksumSha256": "c4e1efc0d2e6abd676a79a772678fd229b80c3d171ad00c3334abe207729fddb"
+    },
+    {
+      "id": "62cd6098e73f450b8d1fd88de000a253",
+      "slug": "math-teacher-explain-algebra",
+      "name": "Math Teacher",
+      "category": "Education",
+      "summary": "Explain algebra problems simply and accurately.",
+      "tags": [
+        "education",
+        "math teacher explain algebra"
+      ],
+      "roles": [
+        "Math Teacher"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/math-teacher-explain-algebra.json",
+      "checksumSha256": "966dd64539a01f082e7682458a171db430bdd0244e2459540e740c19c8588f3a"
+    },
+    {
+      "id": "66fb412d6da74cf78b30e806c9fa92c4",
+      "slug": "math-tutor-algebra",
+      "name": "Math Tutor - Algebra",
+      "category": "Education",
+      "summary": "Explain algebra clearly for learners.",
+      "tags": [
+        "education",
+        "math",
+        "algebra"
+      ],
+      "roles": [
+        "Teacher",
+        "Student"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/math-tutor-algebra.json",
+      "checksumSha256": "36846a39142ee25d92cd4e9a29a30adc4d7b93b46bd9809c71b57204b1bf8309"
+    },
+    {
+      "id": "5eea0c39c1d643fead88709a5cf2dd7b",
+      "slug": "math-tutor-fractions",
+      "name": "Math Tutor - Fractions",
+      "category": "Education",
+      "summary": "Explain fractions clearly for learners.",
+      "tags": [
+        "education",
+        "math",
+        "fractions"
+      ],
+      "roles": [
+        "Teacher",
+        "Student"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/math-tutor-fractions.json",
+      "checksumSha256": "2ed699bf80627be4cffed4e8b888c89c5d76b465bb9dc909ad0040e2d9210144"
+    },
+    {
+      "id": "e29a4638709b4f4296c72f837e3019f3",
+      "slug": "plain-english-teacher",
+      "name": "Plain English Teacher",
+      "category": "Education",
+      "summary": "Rewrite complex content into plain English.",
+      "tags": [
+        "education",
+        "plain-english",
+        "simplification"
+      ],
+      "roles": [
+        "Trainer",
+        "Teacher"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/plain-english-teacher.json",
+      "checksumSha256": "7396b198bd4fdb87a483079ef7a7c3bcd4606138a65b9370fdd2e75eda7b848a"
+    },
+    {
+      "id": "a5a3a3ac78e34e86948ebdde310d2a29",
+      "slug": "quiz-generator",
+      "name": "Quiz Generator",
+      "category": "Education",
+      "summary": "Create quizzes from source material.",
+      "tags": [
+        "education",
+        "quiz",
+        "assessment"
+      ],
+      "roles": [
+        "Teacher",
+        "Trainer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/quiz-generator.json",
+      "checksumSha256": "2ff04989bfbdeddb416d980eac0263fd60faa2aef75cfdfbd6ebfdefceb59203"
+    },
+    {
+      "id": "2e5d4795f0f94e86bbd34c80400a35d8",
+      "slug": "research-paper-summarizer",
+      "name": "Research Paper Summarizer",
+      "category": "Education",
+      "summary": "Summarize research papers in a structured way.",
+      "tags": [
+        "education",
+        "research",
+        "summary"
+      ],
+      "roles": [
+        "Researcher",
+        "Student"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/research-paper-summarizer.json",
+      "checksumSha256": "7ee6d4a8f8a70ddfffd3cc0d0518e056ebae648b390bd5486995182c54b2a96f"
+    },
+    {
+      "id": "750a45db491541d6bca86f6c825805e6",
+      "slug": "science-explainer",
+      "name": "Science Explainer",
+      "category": "Education",
+      "summary": "Explain scientific concepts clearly and simply.",
+      "tags": [
+        "education",
+        "science",
+        "explainer"
+      ],
+      "roles": [
+        "Teacher",
+        "Student"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/science-explainer.json",
+      "checksumSha256": "adc774e43d7c160eef4b829c2ed529078e67454f68cb6b64a41f98be09c86ce7"
+    },
+    {
+      "id": "16d05b252f25442496d1eaab3a43014b",
+      "slug": "scientific-research-assistant",
+      "name": "Scientific Research Assistant",
+      "category": "Education",
+      "summary": "Summarize research findings and explain complex scientific concepts clearly.",
+      "tags": [
+        "education",
+        "scientific research assistant"
+      ],
+      "roles": [
+        "Scientific Research Assistant"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/scientific-research-assistant.json",
+      "checksumSha256": "8814b4e82057f705b5c1d6599188a9181c9ab0e621bec594fa0f840cefeebe36"
+    },
+    {
+      "id": "e657bcc9aaee44a5ba621fe340d37be7",
+      "slug": "table-to-csv-converter",
+      "name": "Table-to-CSV Converter",
+      "category": "Education",
+      "summary": "Convert tabular content into clean CSV.",
+      "tags": [
+        "education",
+        "data-formatting",
+        "csv"
+      ],
+      "roles": [
+        "Student",
+        "Analyst"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/education/table-to-csv-converter.json",
+      "checksumSha256": "d176d85b9f00fec21b93d67f4dce251d815a6a52224272d8f69e93e37efa477c"
+    },
+    {
+      "id": "6742607e00c94b47af7437945001a67e",
+      "slug": "design-doc-reviewer",
+      "name": "Design Doc Reviewer",
+      "category": "Engineering",
+      "summary": "Review design docs for clarity and gaps.",
+      "tags": [
+        "engineering",
+        "design-doc",
+        "review"
+      ],
+      "roles": [
+        "Engineer",
+        "Architect"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/engineering/design-doc-reviewer.json",
+      "checksumSha256": "978dc023154a52765e5a6f09d0dd81825f6198a4d53d40315381dd7b54f470fa"
+    },
+    {
+      "id": "a8de79f76c744dd097ba4fcba20dd5d4",
+      "slug": "operational-readiness-reviewer",
+      "name": "Operational Readiness Reviewer",
+      "category": "Engineering",
+      "summary": "Evaluate systems for operational readiness.",
+      "tags": [
+        "engineering",
+        "operational-readiness",
+        "release"
+      ],
+      "roles": [
+        "Engineer",
+        "SRE"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/engineering/operational-readiness-reviewer.json",
+      "checksumSha256": "a3513b2cb72c6e16055eae0011f0f93459da006df32f8b931233ab7e0b40e091"
+    },
+    {
+      "id": "de23821e7d804973984d80e72e0530c1",
+      "slug": "performance-analyst",
+      "name": "Performance Analyst",
+      "category": "Engineering",
+      "summary": "Analyze bottlenecks and suggest performance improvements.",
+      "tags": [
+        "engineering",
+        "performance",
+        "optimization"
+      ],
+      "roles": [
+        "Engineer",
+        "SRE"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/engineering/performance-analyst.json",
+      "checksumSha256": "25452242c8c821e423fb8c399dff0017edd2383e686f94f4d4a6f408f15df5a3"
+    },
+    {
+      "id": "d3bb7e855b1d4c59858c966f22adc33b",
+      "slug": "principal-engineer",
+      "name": "Principal Engineer",
+      "category": "Engineering",
+      "summary": "Assess technical risk and long-term scalability.",
+      "tags": [
+        "engineering",
+        "principal-engineer",
+        "scalability"
+      ],
+      "roles": [
+        "Principal Engineer",
+        "Architect"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/engineering/principal-engineer.json",
+      "checksumSha256": "a35d46a6701ba110205bbccba97cf09307eee93cbdfef5721589af57b4c46c00"
+    },
+    {
+      "id": "6640eadaabc54ef79f9c422ea68137f6",
+      "slug": "se-explain",
+      "name": "SE: Explain",
+      "category": "Engineering",
+      "summary": "Write production-quality code and explain architecture decisions.",
+      "tags": [
+        "engineering",
+        "se explain"
+      ],
+      "roles": [
+        "SE: Explain"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/engineering/se-explain.json",
+      "checksumSha256": "bd3c9305875c5ba56330da5451954e270930832e15dbf49ac4838f4a648fa858"
+    },
+    {
+      "id": "4a36010d4a424c69b63a35ad6883369b",
+      "slug": "staff-engineer",
+      "name": "Staff Engineer",
+      "category": "Engineering",
+      "summary": "Review proposals with senior engineering judgment.",
+      "tags": [
+        "engineering",
+        "staff-engineer",
+        "tradeoffs"
+      ],
+      "roles": [
+        "Staff Engineer",
+        "Tech Lead"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/engineering/staff-engineer.json",
+      "checksumSha256": "66a196df78f4e3576c40abc4fc117e79143f174ed0674e8257b228cd2f4a2110"
+    },
+    {
+      "id": "fbaa6179e581457aa676e02ce6521a98",
+      "slug": "checklist-builder",
+      "name": "Checklist Builder",
+      "category": "General",
+      "summary": "Turn tasks into concise practical checklists.",
+      "tags": [
+        "general",
+        "checklist",
+        "planning"
+      ],
+      "roles": [
+        "Anyone",
+        "Coordinator"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/general/checklist-builder.json",
+      "checksumSha256": "dc00728dd8abf0185d40db24158554ec9e81d311a28dc024b4a7bc8a7852bcf7"
+    },
+    {
+      "id": "eb2ef119606343849a32531f1e0ccb75",
+      "slug": "email-drafter",
+      "name": "Email Drafter",
+      "category": "General",
+      "summary": "Write clear and professional emails.",
+      "tags": [
+        "general",
+        "email",
+        "writing"
+      ],
+      "roles": [
+        "Professional",
+        "Manager"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/general/email-drafter.json",
+      "checksumSha256": "3a11081f5b40b05d4942b9c6b9f9478b755a1008cc7dc7777a781229e20ff097"
+    },
+    {
+      "id": "bcad56c6ca5a488c8a344cbce3020d8a",
+      "slug": "executive-summary-writer",
+      "name": "Executive Summary Writer",
+      "category": "General",
+      "summary": "Turn detailed material into executive-friendly summaries.",
+      "tags": [
+        "general",
+        "executive-summary",
+        "communication"
+      ],
+      "roles": [
+        "Manager",
+        "Executive"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/general/executive-summary-writer.json",
+      "checksumSha256": "f6fcfb104689e785c7e576e1c5158010f385ca468826f12be268df586f714065"
+    },
+    {
+      "id": "146a8048df5f49248d219a5e43c324cf",
+      "slug": "meeting-minutes-writer",
+      "name": "Meeting Minutes Writer",
+      "category": "General",
+      "summary": "Convert notes into clean meeting minutes.",
+      "tags": [
+        "general",
+        "meeting-minutes",
+        "writing"
+      ],
+      "roles": [
+        "Manager",
+        "Coordinator"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/general/meeting-minutes-writer.json",
+      "checksumSha256": "f716ea35b09a53a21f3061252e252f73ea89c5511d0ec2adbbdb9f2f437ed4f5"
+    },
+    {
+      "id": "9ccfc0f82d8d43cabd4177ff119ec3ff",
+      "slug": "restaurant",
+      "name": "Restaurant",
+      "category": "General",
+      "summary": "Create a cooking mermaid diagram with detailed explanation.",
+      "tags": [
+        "general",
+        "restaurant"
+      ],
+      "roles": [
+        "Restaurant"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/general/restaurant.json",
+      "checksumSha256": "242918369abb3c540ad448bd12958e0465c958b7ea51ebec1196ad811c9def9b"
+    },
+    {
+      "id": "90c93647604a4b9e91d280479205efef",
+      "slug": "cloud-cspm-analyst",
+      "name": "Cloud CSPM Analyst",
+      "category": "Security",
+      "summary": "Interpret cloud posture findings and prioritize remediation.",
+      "tags": [
+        "security",
+        "cspm",
+        "cloud-posture"
+      ],
+      "roles": [
+        "CSPM Analyst",
+        "Cloud Security Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/cloud-cspm-analyst.json",
+      "checksumSha256": "10b9b8195f9b61112b0c1ee25afad853b20e73cccc955587d6754d86e2424086"
+    },
+    {
+      "id": "483c9b504e094194bb724955e7bfef26",
+      "slug": "cloud-security-architect",
+      "name": "Cloud Security Architect",
+      "category": "Security",
+      "summary": "Review cloud architecture for risks and secure-by-design improvements.",
+      "tags": [
+        "security",
+        "cloud-security",
+        "architecture"
+      ],
+      "roles": [
+        "Security Architect",
+        "Cloud Architect"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/cloud-security-architect.json",
+      "checksumSha256": "725f19fd0e08a6fc363f9b0eaac5aa3b448c1045ca8c81b2479f05e05a3c43d4"
+    },
+    {
+      "id": "8cb41ed4ba474f0ca87098895398f83b",
+      "slug": "compliance-analyst",
+      "name": "Compliance Analyst",
+      "category": "Security",
+      "summary": "Review configurations for policy and regulatory concerns.",
+      "tags": [
+        "security",
+        "compliance",
+        "policy",
+        "governance"
+      ],
+      "roles": [
+        "Compliance Analyst",
+        "Security Architect",
+        "Auditor"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/compliance-analyst.json",
+      "checksumSha256": "08ffa6e3c744e1696c03985245b44eec0e8837a0151f96898875b944ffc7dbf1"
+    },
+    {
+      "id": "0f33163781264c3884516bdb9d5ca890",
+      "slug": "iam-reviewer",
+      "name": "IAM Reviewer",
+      "category": "Security",
+      "summary": "Review access configurations for least-privilege issues.",
+      "tags": [
+        "security",
+        "iam",
+        "least-privilege"
+      ],
+      "roles": [
+        "Security Architect",
+        "Identity Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/iam-reviewer.json",
+      "checksumSha256": "1fa699f392e9017c96b7c43b7464c34d12e9173127bf755e1ea1044de98d4265"
+    },
+    {
+      "id": "1998d1316c04485abfb688d19c2860f8",
+      "slug": "incident-responder",
+      "name": "Incident Responder",
+      "category": "Security",
+      "summary": "Triage incidents and recommend containment plus next steps.",
+      "tags": [
+        "security",
+        "incident-response",
+        "triage"
+      ],
+      "roles": [
+        "Incident Responder",
+        "SOC Analyst"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/incident-responder.json",
+      "checksumSha256": "71d37796485fc565041ac7f5470c31bf378bce2e839ae7c7c510950cf986e93d"
+    },
+    {
+      "id": "3df57fb1853d42f281dde988af286599",
+      "slug": "log-analyst",
+      "name": "Log Analyst",
+      "category": "Security",
+      "summary": "Analyze raw logs and summarize suspicious patterns.",
+      "tags": [
+        "security",
+        "logs",
+        "detection"
+      ],
+      "roles": [
+        "SOC Analyst",
+        "Threat Hunter"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/log-analyst.json",
+      "checksumSha256": "e018a04102317eff73e3bbcb746077939aa3d5e72f436b0c0bbcfdb8194fe2c9"
+    },
+    {
+      "id": "fa95b877cd90472c92e838c2e0c13162",
+      "slug": "security-exception-reviewer",
+      "name": "Security Exception Reviewer",
+      "category": "Security",
+      "summary": "Evaluate security exception quality, risk, and compensating controls.",
+      "tags": [
+        "security",
+        "exceptions",
+        "risk"
+      ],
+      "roles": [
+        "Security Architect",
+        "Governance Analyst"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/security-exception-reviewer.json",
+      "checksumSha256": "c67ab110bc9c25ac7b198f2a1646face9f18dbc7bc49e7834eec4010a465c688"
+    },
+    {
+      "id": "5b113280c46846af8a5ae43b1cce25d9",
+      "slug": "soc-analyst",
+      "name": "SOC Analyst",
+      "category": "Security",
+      "summary": "Analyze alerts, suppress noise, and identify what to escalate.",
+      "tags": [
+        "security",
+        "soc",
+        "alerts"
+      ],
+      "roles": [
+        "SOC Analyst",
+        "Security Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/soc-analyst.json",
+      "checksumSha256": "594f8f6d46247e6fdd1be34b53921dca9f145548e1772007c2220265567dad5a"
+    },
     {
       "id": "8647f91e241746f68b32815133eb5695",
       "slug": "threat-hunter",
       "name": "Threat Hunter",
       "category": "Security",
       "summary": "Identify suspicious behavior patterns and explain potential threats.",
-      "tags": ["security", "threat-hunting"],
-      "roles": ["Security Architect", "SOC Analyst"],
+      "tags": [
+        "security",
+        "threat-hunting",
+        "investigation"
+      ],
+      "roles": [
+        "Threat Hunter",
+        "Security Architect",
+        "SOC Analyst"
+      ],
       "icon": "🧠",
       "accentHex": "",
       "version": "1.0.0",
       "minAppVersion": "1.0.0",
-      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/threat-hunter.json"
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/threat-hunter.json",
+      "checksumSha256": "af813006d1d56c98d30f718e702f2de34c69edc88838269eb4f8aa0c096f94c2"
+    },
+    {
+      "id": "7a69735beebf45b1b20b40584fecbbaa",
+      "slug": "threat-modeler",
+      "name": "Threat Modeler",
+      "category": "Security",
+      "summary": "Create structured threat models from designs and flows.",
+      "tags": [
+        "security",
+        "threat-modeling",
+        "architecture"
+      ],
+      "roles": [
+        "Security Architect",
+        "Product Security Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/threat-modeler.json",
+      "checksumSha256": "a36606de60cefcf706d8d889236995abb3870145cbf83d00fd5c34ec1701c9c4"
+    },
+    {
+      "id": "c3379aed8f674dfca1ae3c3e09d77226",
+      "slug": "vulnerability-triage-analyst",
+      "name": "Vulnerability Triage Analyst",
+      "category": "Security",
+      "summary": "Prioritize vulnerabilities by risk and exposure.",
+      "tags": [
+        "security",
+        "vulnerability-management",
+        "triage"
+      ],
+      "roles": [
+        "Vulnerability Analyst",
+        "Security Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/vulnerability-triage-analyst.json",
+      "checksumSha256": "9d59c221d2c29900d23238882596527880fcf6035b4577403bf6a53fca6efbe5"
+    },
+    {
+      "id": "eea785b7dda147bdb269acd7555d6a6f",
+      "slug": "zero-trust-advisor",
+      "name": "Zero Trust Advisor",
+      "category": "Security",
+      "summary": "Recommend practical zero trust controls for an environment.",
+      "tags": [
+        "security",
+        "zero-trust",
+        "identity"
+      ],
+      "roles": [
+        "Security Architect",
+        "Enterprise Architect"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/zero-trust-advisor.json",
+      "checksumSha256": "5056d5c7cb08e1848e53e431b13fe3cbb5611ddc164c248ec7928cdf4f6ba1ff"
+    },
+    {
+      "id": "8ab8539c87a84dc2bf4df622ddc708cd",
+      "slug": "case-summarizer",
+      "name": "Case Summarizer",
+      "category": "Support",
+      "summary": "Condense long cases into concise support summaries.",
+      "tags": [
+        "support",
+        "summary",
+        "case-management"
+      ],
+      "roles": [
+        "Support Engineer",
+        "Manager"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/case-summarizer.json",
+      "checksumSha256": "1a1672a7b0ba166b300157533efc8fc132248a69725ea7a4871778f78ee833d5"
+    },
+    {
+      "id": "2d23a632347c4f5686e299f711dfdf48",
+      "slug": "customer-response-writer",
+      "name": "Customer Response Writer",
+      "category": "Support",
+      "summary": "Convert technical findings into clear customer-ready responses.",
+      "tags": [
+        "support",
+        "customer-communication",
+        "writing"
+      ],
+      "roles": [
+        "Support Engineer",
+        "CSAM"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/customer-response-writer.json",
+      "checksumSha256": "7a6fb02ec13805b6b6f3a5efb178a02de0b710756fac08b86f064a74ae2febf1"
+    },
+    {
+      "id": "254de78915da4a57970e3e36a0e5bc65",
+      "slug": "escalation-engineer",
+      "name": "Escalation Engineer",
+      "category": "Support",
+      "summary": "Recommend the fastest resolution path for escalated issues.",
+      "tags": [
+        "support",
+        "escalation",
+        "troubleshooting"
+      ],
+      "roles": [
+        "Escalation Engineer",
+        "Support Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/escalation-engineer.json",
+      "checksumSha256": "c085be03528a7f4b223f66f9d78e7e0fbf80c2c94fa3638c4170a267ae010e14"
+    },
+    {
+      "id": "a876c54a046645e594ea34093686e2c1",
+      "slug": "knowledge-base-author",
+      "name": "Knowledge Base Author",
+      "category": "Support",
+      "summary": "Write reusable internal support knowledge articles.",
+      "tags": [
+        "support",
+        "knowledge-base",
+        "documentation"
+      ],
+      "roles": [
+        "Technical Writer",
+        "Support Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/knowledge-base-author.json",
+      "checksumSha256": "c2d0a65d5f7e36581415860f513cf2890671780522052598b79a7a1f89c04a3d"
+    },
+    {
+      "id": "9abcde92439847f3a370471e9bbb47c6",
+      "slug": "meeting-notes-to-action-items",
+      "name": "Meeting Notes to Action Items",
+      "category": "Support",
+      "summary": "Convert meeting notes into clear support action items.",
+      "tags": [
+        "support",
+        "meeting-notes",
+        "action-items"
+      ],
+      "roles": [
+        "Manager",
+        "Support Lead"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/meeting-notes-to-action-items.json",
+      "checksumSha256": "d459f86a129003136696da8624c7d91b01f9e164da9ab79f3e6531c011e78902"
+    },
+    {
+      "id": "abee08393edc472188275eb9aaea9957",
+      "slug": "regex-engineer",
+      "name": "Regex Engineer",
+      "category": "Support",
+      "summary": "Design precise regular expressions to match and transform text.",
+      "tags": [
+        "support",
+        "regex",
+        "text-processing"
+      ],
+      "roles": [
+        "Support Engineer",
+        "Regex Engineer",
+        "Developer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/regex-engineer.json",
+      "checksumSha256": "6aaaf02afca60376b9620fa1fc158172982850b6b356499031a9b06a54173a09"
+    },
+    {
+      "id": "df180be2c8484d06924257c5cd420362",
+      "slug": "root-cause-summarizer",
+      "name": "Root Cause Summarizer",
+      "category": "Support",
+      "summary": "Explain likely root cause with evidence and plain language.",
+      "tags": [
+        "support",
+        "root-cause",
+        "analysis"
+      ],
+      "roles": [
+        "Support Engineer",
+        "Incident Manager"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/root-cause-summarizer.json",
+      "checksumSha256": "18a96bc5d387a6d531ad60384eb30ea14f9dbed289f94c0ec4938f86e583972e"
+    },
+    {
+      "id": "8a831202f9f74d3aba4575e9daf6727c",
+      "slug": "runbook-builder",
+      "name": "Runbook Builder",
+      "category": "Support",
+      "summary": "Build operational runbooks with checks and rollback steps.",
+      "tags": [
+        "support",
+        "runbook",
+        "operations"
+      ],
+      "roles": [
+        "Support Engineer",
+        "Operations Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/runbook-builder.json",
+      "checksumSha256": "f41234d4d9de3f8a80120ca9369f420c0eb87fb96818ea49e3f0c1c7b6f6b65f"
+    },
+    {
+      "id": "a0c6991a7f334fa8abf6e2c3b407127e",
+      "slug": "support-engineer-customer-response",
+      "name": "Support Engineer",
+      "category": "Support",
+      "summary": "Turn troubleshooting findings into a customer-ready response.",
+      "tags": [
+        "support",
+        "customer-response",
+        "screenshots"
+      ],
+      "roles": [
+        "Support Engineer",
+        "CSA",
+        "Escalation Engineer"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/support-engineer-customer-response.json",
+      "checksumSha256": "0e95b94a76bad633fa3bcd4886745258afdf648e152d5dd7961a386edb366751"
+    },
+    {
+      "id": "5eae67f9568d4a068fff2f189714bf98",
+      "slug": "support-engineer-troubleshooting",
+      "name": "Support Engineer",
+      "category": "Support",
+      "summary": "Troubleshoot screenshots and suggest next technical steps.",
+      "tags": [
+        "support",
+        "troubleshooting",
+        "screenshots"
+      ],
+      "roles": [
+        "Support Engineer",
+        "CSA",
+        "Help Desk"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/support-engineer-troubleshooting.json",
+      "checksumSha256": "71fb37d04a7f39e811d43a5d0ada06a602d2fde99793bed7d122425ee26cc22a"
+    },
+    {
+      "id": "e15575655dbb483a92cbfc077feeffc7",
+      "slug": "technical-writer",
+      "name": "Technical Writer",
+      "category": "Support",
+      "summary": "Produce clear and well-structured technical documentation.",
+      "tags": [
+        "support",
+        "documentation",
+        "writing"
+      ],
+      "roles": [
+        "Technical Writer",
+        "Support Engineer",
+        "PM"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/technical-writer.json",
+      "checksumSha256": "c265a692b6ddcb1d05bc5face57f56428e1dfdcaa2ab14dc1b3ab81e459d28a2"
+    },
+    {
+      "id": "6a5ec051356f4d029fa4e393cc0a12d7",
+      "slug": "ticket-classifier",
+      "name": "Ticket Classifier",
+      "category": "Support",
+      "summary": "Classify and route tickets by severity and domain.",
+      "tags": [
+        "support",
+        "triage",
+        "ticket-routing"
+      ],
+      "roles": [
+        "Support Engineer",
+        "Support Manager"
+      ],
+      "icon": "🧠",
+      "accentHex": "",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/support/ticket-classifier.json",
+      "checksumSha256": "cba83ec575e35f1d90af7e7f9613ccd3f2d1dfc7ea3496d38352bbf39e06ae0f"
     }
   ]
 }

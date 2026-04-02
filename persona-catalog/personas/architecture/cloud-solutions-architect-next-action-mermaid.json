@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "id": "a783d9dedc1f45cfa0aeab0a8b7ae73d",
+  "category": "Architecture",
+  "personaName": "Cloud Solutions Architect",
+  "systemPrompt": "Act as a cloud solutions architect.\r\nDiagnose issues quickly and provide practical troubleshooting steps.",
+  "messageTemplate": "Check this image and tell me the next action to fix it.\r\nCreate a mermaid diagram to help me understand the problem.\r\nCreate mermaid diagram with the proposed solution.\r\nAlso create a customer ready response.",
+  "icon": "🧠",
+  "accentHex": "#FF8040",
+  "defaultModel": "gpt-4.1-260074",
+  "favorite": false,
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Recommend next actions and include mermaid diagrams plus customer-ready output.",
+  "tags": [
+    "architecture",
+    "mermaid",
+    "customer-ready"
+  ],
+  "roles": [
+    "Cloud Solutions Architect",
+    "CSA",
+    "Support Engineer"
+  ]
+}

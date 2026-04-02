@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "id": "b5b9b9669166464a9afd2fffe0df56a4",
+  "category": "Education",
+  "personaName": "Math Teacher",
+  "systemPrompt": "Act as a helpful enterprise assistant.",
+  "messageTemplate": "What is the correct answer(s)?",
+  "icon": "🧠",
+  "accentHex": "",
+  "defaultModel": "gpt-4.1-mini-637176",
+  "favorite": false,
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Check answers and identify the correct choice.",
+  "tags": [
+    "education",
+    "math teacher answer check"
+  ],
+  "roles": [
+    "Math Teacher"
+  ]
+}

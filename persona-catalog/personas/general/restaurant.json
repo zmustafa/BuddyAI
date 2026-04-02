@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "id": "9ccfc0f82d8d43cabd4177ff119ec3ff",
+  "category": "General",
+  "personaName": "Restaurant",
+  "systemPrompt": "Act as a chef.",
+  "messageTemplate": "create a mermaid diagram to bake a pizza. also include detailed explanation",
+  "icon": "🧠",
+  "accentHex": "",
+  "defaultModel": "gpt-4.1-mini-637176",
+  "favorite": false,
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Create a cooking mermaid diagram with detailed explanation.",
+  "tags": [
+    "general",
+    "restaurant"
+  ],
+  "roles": [
+    "Restaurant"
+  ]
+}
