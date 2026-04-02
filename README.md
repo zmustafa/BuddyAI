@@ -46,6 +46,20 @@ BuddyAI eliminates this loop:
 
 ---
 
+## 🔐 New: Claude OAuth Support
+
+BuddyAI now supports **Claude OAuth authentication**, allowing you to connect your Claude account directly without API keys.
+
+### Benefits:
+- Secure browser-based login  
+- No API key management required  
+- Works seamlessly alongside ChatGPT OAuth  
+- Ideal for enterprise SSO environments  
+
+👉 Just choose **"Connect your ChatGPT or Claude Account (Quick Setup)"** during setup.
+
+---
+
 ## 🔍 Lens — Core Feature
 
 BuddyAI Lens applies AI directly to selected text from ANY application.
@@ -94,13 +108,15 @@ Win + Shift + Q
 ## 🔌 Supported Providers
 
 - Your regular ChatGPT account (via OAuth)
+- Claude account (via OAuth) ✅ NEW
 - Azure OpenAI  
 - OpenAI  
-- Anthropic Claude  
+- Anthropic Claude (API)  
 - Google Gemini  
 - Mistral  
 - LM Studio / Ollama / local endpoints  
 - Custom APIs  
+<img width="806" height="626" alt="image" src="https://github.com/user-attachments/assets/6a5e673d-eb6f-4798-b7a8-1c27abe41b17" />
 
 ---
 
@@ -157,7 +173,7 @@ Reusable workflows:
 ---
 
 ## 🖼️ Screenshots
- 
+
 - assets/main.png  
 - assets/lens.png  
 - assets/snip.png  
