@@ -10,8 +10,11 @@
       "summary": "Identify suspicious behavior patterns and explain potential threats.",
       "tags": ["security", "threat-hunting"],
       "roles": ["Security Architect", "SOC Analyst"],
+      "icon": "🧠",
+      "accentHex": "",
       "version": "1.0.0",
-      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/main/persona-catalog/personas/security/threat-hunter.json"
+      "minAppVersion": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/refs/heads/main/persona-catalog/personas/security/threat-hunter.json"
     }
   ]
 }
