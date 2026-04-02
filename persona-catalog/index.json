@@ -1,0 +1,17 @@
+{
+  "storeVersion": "1.0.0",
+  "generatedUtc": "2026-04-01T20:30:00Z",
+  "personas": [
+    {
+      "id": "8647f91e241746f68b32815133eb5695",
+      "slug": "threat-hunter",
+      "name": "Threat Hunter",
+      "category": "Security",
+      "summary": "Identify suspicious behavior patterns and explain potential threats.",
+      "tags": ["security", "threat-hunting"],
+      "roles": ["Security Architect", "SOC Analyst"],
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/zmustafa/BuddyAI/main/persona-catalog/personas/security/threat-hunter.json"
+    }
+  ]
+}
