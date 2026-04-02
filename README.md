@@ -1,4 +1,4 @@
-[![Download BuddyAI](https://img.shields.io/badge/Download-BuddyAI%20MSI-blue?style=for-the-badge)](https://github.com/zmustafa/BuddyAI/raw/main/releases/BuddyAISetup.msi)
+[![Download BuddyAI](https://img.shields.io/badge/Download-BuddyAI%20MSI-blue?style=for-the-badge)](https://github.com/zmustafa/BuddyAI/raw/main/releases/1.0/BuddyAISetup.msi)
 
 # 🚀 BuddyAI Desktop
 
