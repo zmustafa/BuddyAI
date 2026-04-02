@@ -1,6 +1,8 @@
+[![Download BuddyAI](https://img.shields.io/badge/Download-BuddyAI%20MSI-blue?style=for-the-badge)](https://github.com/zmustafa/BuddyAI/raw/main/releases/1.0/BuddyAISetup.msi)
+
 # 🚀 BuddyAI Desktop
 
-> **Stop switching between ChatGPT, Copilot, logs, screenshots, and docs.**  
+> **Stop switching between ChatGPT, Copilot, Claude, logs, screenshots, and docs.**  
 > **Bring AI directly into your desktop workflow.**
 
 ---
@@ -41,6 +43,20 @@ BuddyAI eliminates this loop:
 - Snip screen → analyze immediately  
 - Stay inside your workflow  
 - Use any model you want  
+
+---
+
+## 🔐 New: Claude OAuth Support
+
+BuddyAI now supports **Claude OAuth authentication**, allowing you to connect your Claude account directly without API keys.
+
+### Benefits:
+- Secure browser-based login  
+- No API key management required  
+- Works seamlessly alongside ChatGPT OAuth  
+- Ideal for enterprise SSO environments  
+
+👉 Just choose **"Connect your ChatGPT or Claude Account (Quick Setup)"** during setup.
 
 ---
 
@@ -92,13 +108,15 @@ Win + Shift + Q
 ## 🔌 Supported Providers
 
 - Your regular ChatGPT account (via OAuth)
+- Claude account (via OAuth) ✅ NEW
 - Azure OpenAI  
 - OpenAI  
-- Anthropic Claude  
+- Anthropic Claude (API)  
 - Google Gemini  
 - Mistral  
 - LM Studio / Ollama / local endpoints  
 - Custom APIs  
+<img width="806" height="626" alt="image" src="https://github.com/user-attachments/assets/6a5e673d-eb6f-4798-b7a8-1c27abe41b17" />
 
 ---
 
@@ -155,7 +173,7 @@ Reusable workflows:
 ---
 
 ## 🖼️ Screenshots
- 
+
 - assets/main.png  
 - assets/lens.png  
 - assets/snip.png  
