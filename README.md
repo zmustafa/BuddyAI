@@ -2,7 +2,7 @@
 
 # 🚀 BuddyAI Desktop
 
-> **Stop switching between ChatGPT, Copilot, logs, screenshots, and docs.**  
+> **Stop switching between ChatGPT, Copilot, Claude, logs, screenshots, and docs.**  
 > **Bring AI directly into your desktop workflow.**
 
 ---
