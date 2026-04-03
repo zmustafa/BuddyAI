@@ -174,15 +174,20 @@ Reusable workflows:
 
 ## 🖼️ Screenshots
 
-- <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/05989c61-83f0-4ff0-8c0c-c0720c1e74bf" />
+### BuddyAI Desktop Main Screen
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/05989c61-83f0-4ff0-8c0c-c0720c1e74bf" />
 
-- <img width="1551" height="915" alt="image" src="https://github.com/user-attachments/assets/4dcb6c1c-0896-4245-bfbc-bc5e63e2754f" />
+### BuddyAI Toast Notification Feature
+<img width="1551" height="915" alt="image" src="https://github.com/user-attachments/assets/4dcb6c1c-0896-4245-bfbc-bc5e63e2754f" />
 
-- <img width="2102" height="1252" alt="image" src="https://github.com/user-attachments/assets/4e674f8e-d253-440d-92f8-12d2e484d573" />
+### BuddyAI Lense Feature
+<img width="2102" height="1252" alt="image" src="https://github.com/user-attachments/assets/4e674f8e-d253-440d-92f8-12d2e484d573" />
 
-- <img width="946" height="633" alt="image" src="https://github.com/user-attachments/assets/c744f670-a8d0-4dbe-993d-00e298ca8836" />
+### Persona Downloader
+<img width="946" height="633" alt="image" src="https://github.com/user-attachments/assets/c744f670-a8d0-4dbe-993d-00e298ca8836" />
 
-- <img width="1550" height="995" alt="image" src="https://github.com/user-attachments/assets/54b0df0b-5540-4ef3-affc-73c4c471abfe" />
+### Configure and Manage AI Providers
+<img width="1550" height="995" alt="image" src="https://github.com/user-attachments/assets/54b0df0b-5540-4ef3-affc-73c4c471abfe" />
 
 
 
