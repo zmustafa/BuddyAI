@@ -223,7 +223,6 @@ Open in Visual Studio and run.
 - Lens enhancements  
 - Plugin system  
 - Enterprise controls  
-- Session persistence  
 
 ---
 
