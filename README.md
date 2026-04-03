@@ -178,15 +178,19 @@ Reusable workflows:
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/05989c61-83f0-4ff0-8c0c-c0720c1e74bf" />
 
 ### BuddyAI Toast Notification Feature
+- In this example, user sees a PowerShell error, presses Win+Shift+Q hot key, a gray snipping overlay appears, selects the PowerShell window with the error and a few seconds later, a toast notificationa appears on the bottom right with the response from AI propvider.
 <img width="1551" height="915" alt="image" src="https://github.com/user-attachments/assets/4dcb6c1c-0896-4245-bfbc-bc5e63e2754f" />
 
 ### BuddyAI Lense Feature
+- In this example, Mermaid Live is open in a web browser. User selects the flowchart code and ask BuddyAI to add colors, dotted lines, so on and BuddyAI produces the updated code that can be directly replaced into the original Mermaid Live window opened in the browser.
 <img width="2102" height="1252" alt="image" src="https://github.com/user-attachments/assets/4e674f8e-d253-440d-92f8-12d2e484d573" />
 
 ### Persona Downloader
+- You can download additional Personas from GitHub from directly within BuddyID.
 <img width="946" height="633" alt="image" src="https://github.com/user-attachments/assets/c744f670-a8d0-4dbe-993d-00e298ca8836" />
 
 ### Configure and Manage AI Providers
+- You can manage AI providers from this screen.
 <img width="1550" height="995" alt="image" src="https://github.com/user-attachments/assets/54b0df0b-5540-4ef3-affc-73c4c471abfe" />
 
 
