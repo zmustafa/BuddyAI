@@ -187,7 +187,7 @@ Reusable workflows:
 
 ### Persona Downloader
 - You can download additional Personas from GitHub from directly within BuddyID.
-<img width="946" height="633" alt="image" src="https://github.com/user-attachments/assets/c744f670-a8d0-4dbe-993d-00e298ca8836" />
+<img width="662" height="443" alt="image" src="https://github.com/user-attachments/assets/c744f670-a8d0-4dbe-993d-00e298ca8836" />
 
 ### Configure and Manage AI Providers
 - You can manage AI providers from this screen.
