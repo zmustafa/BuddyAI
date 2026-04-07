@@ -626,7 +626,7 @@ public sealed class AiProviderClient : IDisposable
         {
             cancellationToken.ThrowIfCancellationRequested();
             if (string.IsNullOrWhiteSpace(line)) continue;
-            
+
             if (line.StartsWith("event: "))
             {
                 currentEvent = line.Substring(7).Trim();
@@ -642,14 +642,22 @@ public sealed class AiProviderClient : IDisposable
                 {
                     using JsonDocument doc = JsonDocument.Parse(data);
 
+                    // Responses API: response.completed — full response with output
                     if (currentEvent == "response.completed")
                     {
+                        // The completed payload may carry the response at the root or nested under "response"
+                        JsonElement responseRoot = doc.RootElement.TryGetProperty("response", out JsonElement nestedResponse)
+                            ? nestedResponse
+                            : doc.RootElement;
+
+                        if (responseRoot.TryGetProperty("id", out JsonElement completedIdEl) && completedIdEl.ValueKind == JsonValueKind.String)
+                            responseId = completedIdEl.GetString();
+
                         bool foundText = false;
-                        if (doc.RootElement.TryGetProperty("response", out JsonElement responseEl) &&
-                            responseEl.TryGetProperty("output", out JsonElement outputArray) && 
+                        if (responseRoot.TryGetProperty("output", out JsonElement outputArray) && 
                             outputArray.ValueKind == JsonValueKind.Array)
                         {
-                            StringBuilder tempSb = new StringBuilder();
+                            StringBuilder tempSb = new();
                             foreach (JsonElement outputItem in outputArray.EnumerateArray())
                             {
                                 if (outputItem.TryGetProperty("content", out JsonElement contentArray) && contentArray.ValueKind == JsonValueKind.Array)
@@ -664,7 +672,7 @@ public sealed class AiProviderClient : IDisposable
                                     }
                                 }
                             }
-                            
+
                             if (foundText)
                             {
                                 sb.Clear();
@@ -672,11 +680,44 @@ public sealed class AiProviderClient : IDisposable
                                 break;
                             }
                         }
+
+                        // Fallback: output_text at root level of completed response
+                        if (!foundText && responseRoot.TryGetProperty("output_text", out JsonElement otEl) && otEl.ValueKind == JsonValueKind.String)
+                        {
+                            string? ot = otEl.GetString();
+                            if (!string.IsNullOrEmpty(ot))
+                            {
+                                sb.Clear();
+                                sb.Append(ot);
+                                break;
+                            }
+                        }
                     }
 
+                    // Responses API: response.output_text.delta — incremental text chunk
+                    if (currentEvent == "response.output_text.delta")
+                    {
+                        if (doc.RootElement.TryGetProperty("delta", out JsonElement deltaEl) && deltaEl.ValueKind == JsonValueKind.String)
+                            sb.Append(deltaEl.GetString());
+                        continue;
+                    }
+
+                    // Responses API: response.output_text.done — final text for an output item
+                    if (currentEvent == "response.output_text.done")
+                    {
+                        if (doc.RootElement.TryGetProperty("text", out JsonElement doneTextEl) && doneTextEl.ValueKind == JsonValueKind.String)
+                        {
+                            sb.Clear();
+                            sb.Append(doneTextEl.GetString());
+                        }
+                        continue;
+                    }
+
+                    // Responses API: response.created / response.in_progress — capture the response id
                     if (doc.RootElement.TryGetProperty("id", out JsonElement idEl) && idEl.ValueKind == JsonValueKind.String)
                         responseId = idEl.GetString();
 
+                    // Chat Completions streaming format: choices[].delta.content
                     if (doc.RootElement.TryGetProperty("choices", out JsonElement choices) && choices.ValueKind == JsonValueKind.Array && choices.GetArrayLength() > 0)
                     {
                         JsonElement choice = choices[0];
@@ -688,6 +729,7 @@ public sealed class AiProviderClient : IDisposable
                                 sb.Append(contentEl.GetString());   
                         }
                     }
+                    // Ollama streaming format: message.content
                     else if (doc.RootElement.TryGetProperty("message", out JsonElement msgEl))
                     {
                         if (msgEl.TryGetProperty("content", out JsonElement contentEl) && contentEl.ValueKind == JsonValueKind.String)

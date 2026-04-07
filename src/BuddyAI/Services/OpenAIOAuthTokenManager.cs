@@ -84,7 +84,7 @@ public sealed class ChatGPTOAuthTokenManager
 
             string json = await response.Content.ReadAsStringAsync(cancellationToken);
             using var doc = JsonDocument.Parse(json);
-            
+
             string newAccessToken = doc.RootElement.GetProperty("access_token").GetString() ?? "";
             string newRefreshToken = doc.RootElement.GetProperty("refresh_token").GetString() ?? tokenData.RefreshToken;
             int expiresIn = doc.RootElement.GetProperty("expires_in").GetInt32();

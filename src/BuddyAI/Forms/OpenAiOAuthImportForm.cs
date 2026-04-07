@@ -96,7 +96,7 @@ public partial class ChatGPTOAuthImportForm : Form
 
             var res = await client.SendAsync(req);
             string json = await res.Content.ReadAsStringAsync();
-            
+
             if (!res.IsSuccessStatusCode)
             {
                 MessageBox.Show($"Token exchange failed: {json}", "OAuth Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
