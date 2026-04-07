@@ -6,6 +6,7 @@ using System.Linq;
 using System.Windows.Forms;
 using BuddyAI.Models;
 using BuddyAI.Services;
+using BuddyAI.Helpers;
 using Microsoft.Web.WebView2.WinForms;
 
 namespace BuddyAI.Forms;
@@ -748,7 +749,8 @@ public sealed class ProviderImportWizardForm : Form
     {
         try
         {
-            await _webView!.EnsureCoreWebView2Async();
+            var env = await WebView2Helper.CreateEnvironmentAsync();
+            await _webView!.EnsureCoreWebView2Async(env);
             _webView.CoreWebView2.Navigate(url);
         }
         catch (Exception ex)

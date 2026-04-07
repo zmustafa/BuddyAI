@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Text;
 using System.Text.Json;
+using BuddyAI.Helpers;
 
 namespace BuddyAI.Forms;
 
@@ -111,7 +112,8 @@ public sealed class ConversationWindowForm : Form
     {
         try
         {
-            await _web.EnsureCoreWebView2Async();
+            var env = await WebView2Helper.CreateEnvironmentAsync();
+            await _web.EnsureCoreWebView2Async(env);
             if (_web.CoreWebView2 != null)
             {
                 _web.CoreWebView2.Settings.IsWebMessageEnabled = true;

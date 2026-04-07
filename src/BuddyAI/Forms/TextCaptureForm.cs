@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 using System.Text.Json;
 using BuddyAI.Models;
 using BuddyAI.Services;
+using BuddyAI.Helpers;
 using SelectionCaptureApp;
 using Microsoft.Web.WebView2.WinForms;
 using Markdig;
@@ -805,7 +806,8 @@ public sealed class TextCaptureForm : Form
     {
         try
         {
-            await _webViewResult.EnsureCoreWebView2Async(null);
+            var env = await WebView2Helper.CreateEnvironmentAsync();
+            await _webViewResult.EnsureCoreWebView2Async(env);
             _webViewResult.CoreWebView2InitializationCompleted += (s, e) =>
             {
                 if (e.IsSuccess && _pendingHtmlNavigation != null)

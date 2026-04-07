@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2.WinForms;
+using BuddyAI.Helpers;
 
 namespace BuddyAI.Forms;
 
@@ -59,7 +60,8 @@ public partial class ClaudeImportForm : Form
         {
             try
             {
-                await _webView.EnsureCoreWebView2Async();
+                var env = await WebView2Helper.CreateEnvironmentAsync();
+                await _webView.EnsureCoreWebView2Async(env);
                 _webView.CoreWebView2.Navigate("https://console.anthropic.com/settings/keys");
             }
             catch (Exception ex)

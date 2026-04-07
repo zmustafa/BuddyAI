@@ -974,7 +974,8 @@ public sealed partial class AIQ : Form
 
         try
         {
-            await state.WebView.EnsureCoreWebView2Async();
+            var env = await WebView2Helper.CreateEnvironmentAsync();
+            await state.WebView.EnsureCoreWebView2Async(env);
             if (state.WebView.CoreWebView2 != null)
             {
                 state.WebView.CoreWebView2.Settings.AreDefaultContextMenusEnabled = true;
