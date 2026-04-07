@@ -2,6 +2,7 @@ using System.Text.Json;
 using System.Text.Json;
 using Microsoft.Web.WebView2.WinForms;
 using BuddyAI.Services;
+using BuddyAI.Helpers;
 using Microsoft.Web.WebView2.Core;
 
 namespace BuddyAI.Forms;
@@ -47,7 +48,8 @@ public partial class ClaudeOAuthImportForm : Form
         {
             try
             {
-                await _webView.EnsureCoreWebView2Async();
+                var env = await WebView2Helper.CreateEnvironmentAsync();
+                await _webView.EnsureCoreWebView2Async(env);
                 _webView.CoreWebView2.Navigate("https://claude.ai/login");
             }
             catch (Exception ex)

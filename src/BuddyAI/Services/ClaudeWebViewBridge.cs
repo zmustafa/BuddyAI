@@ -2,6 +2,7 @@ using System.Text.Json;
 using System.Text.Json;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.WinForms;
+using BuddyAI.Helpers;
 
 namespace BuddyAI.Services;
 
@@ -59,7 +60,8 @@ public sealed class ClaudeWebViewBridge : IDisposable
                 Visible = false
             };
 
-            await _webView.EnsureCoreWebView2Async();
+            var env = await WebView2Helper.CreateEnvironmentAsync();
+            await _webView.EnsureCoreWebView2Async(env);
 
             // Register the NavigationCompleted handler BEFORE calling Navigate
             TaskCompletionSource<bool> navDone = new();

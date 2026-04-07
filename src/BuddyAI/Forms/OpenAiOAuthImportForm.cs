@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Text;
 using Microsoft.Web.WebView2.WinForms;
 using BuddyAI.Services;
+using BuddyAI.Helpers;
 using Microsoft.Web.WebView2.Core;
 using System.Security.Cryptography;
 
@@ -31,7 +32,8 @@ public partial class ChatGPTOAuthImportForm : Form
         {
             try
             {
-                await _webView.EnsureCoreWebView2Async();
+                var env = await WebView2Helper.CreateEnvironmentAsync();
+                await _webView.EnsureCoreWebView2Async(env);
                 _webView.CoreWebView2.NavigationStarting += CoreWebView2_NavigationStarting;
                 var scope = "openid profile email offline_access";
                 string codeChallenge = GenerateCodeChallenge(_codeVerifier);
